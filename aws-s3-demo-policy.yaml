@@ -1,0 +1,9 @@
+policies:
+  - name: aws-s3-demo-policy
+    resource: aws.s3
+    filters:
+      - "tag:createdBy": absent
+    # actions:
+    #   - type: tag
+    #     key: createdBy
+    #     value: Sam
